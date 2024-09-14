@@ -1,0 +1,7 @@
+.main-content{
+    height: 90vh;
+}
+.container-fluid .w-25{
+    width: 24% !important;
+    height: 90% !important;
+}
