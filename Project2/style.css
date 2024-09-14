@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --navbar-bgcolor: #1F3A1F;
+    --border-radius : 10px;
+    --main-font : "Outfit";
+}
+.navigation-section{
+    width: 100%;
+    height: 50px;
+    background-color: var(--navbar-bgcolor);
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-section .menu-container{
+    width: 35%;
+    height: 100%;
+    /* background-color: red; */
+    font-family: var(--main-font);
+}
+.menu-container .nav-menu{
+    display: flex;
+    list-style: none;
+}
+.menu-container .nav-menu li{
+    padding: 15px;
+    position: relative;
+}
+.menu-container .nav-menu li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.dropdown{
+    list-style: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 150px;
+    margin-left: -20px;
+    display: none;
+    background-color: var(--navbar-bgcolor);
+}
+.dropdown li {
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+.nav-menu li:hover .dropdown{
+    display: block;
+}
+.navigation-section .mode-container{
+    width: 7.5%;
+    height: 70%;
+    background-color: black;
+    opacity: 0.4;
+    margin-right: 20px;
+    border-radius: var(--border-radius);
+    margin-top: 8px;
+    color: white;
+    font-family: var(--main-font);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.mode-container:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.logo-search-container{
+    width: 100%;
+    height: 80px;
+    border-bottom:1px solid rgba(128, 128, 128, 0.584);
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.logo-search-container .account-manager{
+    width: 9%;
+    height: 70%;
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.account-manager:hover{
+    cursor: pointer;
+}
+.logo-search-container h2{
+    color: var(--navbar-bgcolor);
+    margin-left: 34px;
+}
+.logo-search-container h2:hover{
+    cursor: pointer;
+}
+.input-container{
+    width: 20%;
+    height: 40%;
+    position: relative;
+}
+.input-container :last-child{
+    position: absolute;
+    right: 2%;
+    top: 24%;
+
+}
+.logo-search-container input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid black ;
+    border-radius: var(--border-radius);
+    background-color: #d8d8dac7;
+    padding-left: 10px;
+}
